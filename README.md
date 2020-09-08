@@ -151,18 +151,50 @@ EOF  all  create  destroy  help  quit  show  update
 ```
 
 ## Bugs
-No known bugs at this time. 
+No known bugs at this time.
+
+
+# AirBnB clone - RESTful API
+#### Third Part
+
+#### `api/`  The directory used for this project.
+
+#### Status of the API
+- The first endpoint (path) will be to return the state of the API.
+#### Some stats?
+- Create an endpoint that retrieves the number of each objects by type.
+#### Not found
+- Create a handler for `404` errors that returns a JSON-formatted `404` status code response.
+#### State
+- Create a new view for `State` objects that handles all default RestFul API actions.
+#### City
+- Create a new view for `City` objects that handles all default RestFul API actions.
+#### Amenity
+- Create a new view for `Amenity` objects that handles all default RestFul API actions.
+#### User
+- Create a new view for `User` object that handles all default RestFul API actions.
+#### Place
+- Create a new view for `Place` objects that handles all default RestFul API actions.
+#### Reviews
+- Create a new view for `Review` object that handles all default RestFul API actions.
+#### HTTP access control (CORS)
+- Create a `CORS` instance allowing: `/*` for `0.0.0.0`
+
+----------
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang) 
+
+### First Part:
+- Alexa Orrico -  [Github](https://github.com/alexaorrico)  /  [Twitter](https://twitter.com/alexa_orrico)  
+- Jennifer Huang -  [Github](https://github.com/jhuang10123)  /  [Twitter](https://twitter.com/earthtojhuang)
+
+### Second Part:
+- Joann Vuong
+
+### Third Part:
+-   **Cristina Rueda**  -  [CrisRuedaP](https://github.com/CrisRuedaP)
+-   **David Hincapié** - [dalejohgi](https://github.com/dalejohgi)
 
 
-Second part of Airbnb: Joann Vuong
 ## License
-Public Domain. No copy write protection. 
-
-
-## Authors third part:
-David Hincapié - [Github](https://github.com/CrisRuedaP)
-Cristina Rueda - [Github](https://github.com/dalejohgi)
+Public Domain. No copy write protection.

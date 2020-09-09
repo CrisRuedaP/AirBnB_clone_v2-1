@@ -12,6 +12,10 @@ from models.user import User
 from models.review import Review
 
 
+classes = {"amenities": Amenity, "cities": City,
+           "places": Place, "reviews": Review, "states": State, "users": User}
+
+
 @app_views.route('/status', strict_slashes=False)
 def status():
     """Return the current status"""
@@ -21,9 +25,11 @@ def status():
 @app_views.route('/stats', strict_slashes=False)
 def stats():
     """Return the number of objs in a class"""
-    classes = {"amenities": Amenity, "cities": City,
-               "places": Place, "reviews": Review, "states": State, "users": User}
     new_dict = {}
     for key, value in classes.items():
         new_dict[key] = storage.count(value)
     return jsonify(new_dict)
+
+
+if __name__ == "__main__":
+    pass

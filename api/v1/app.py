@@ -7,6 +7,7 @@ from flask import Flask
 from flask import Blueprint
 from models import storage
 from api.v1.views import app_views
+from os import getenv
 
 app = Flask(__name__)
 app.register_blueprint(app_views)
@@ -18,4 +19,4 @@ def teardown_appcontext(self):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port='5000', threaded=True, debug=True)
+    app.run(host=getenv('0.0.0.0'), port='5000', threaded=True, debug=True)

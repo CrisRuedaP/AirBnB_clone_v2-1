@@ -3,6 +3,7 @@
 app file for the api
 """
 
+from os import getenv
 from flask import Flask
 from flask import Blueprint
 from models import storage
@@ -19,6 +20,6 @@ def teardown_appcontext(self):
 
 if __name__ == "__main__":
     app.run(
-            host=getenv('HBNB_API_HOST'),
-            port=getenv('HBNB_API_PORT'),
+            host=getenv('HBNB_API_HOST', '0.0.0.0'),
+            port=int(getenv('HBNB_API_PORT', 5000)),
             threaded=True)

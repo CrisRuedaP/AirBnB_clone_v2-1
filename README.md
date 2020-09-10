@@ -157,27 +157,27 @@ No known bugs at this time.
 # AirBnB clone - RESTful API
 #### Third Part
 
-#### `api/`  The directory used for this project.
+#### [`api/`](api/) The directory used for this project.
 
-#### Status of the API
+#### Status of the API: [app.py](api/v1/app.py)
 - The first endpoint (path) will be to return the state of the API.
-#### Some stats?
+#### Some stats? [index.py](api/v1/views/index.py)
 - Create an endpoint that retrieves the number of each objects by type.
-#### Not found
+#### Not found: [app.py](api/v1/app.py)
 - Create a handler for `404` errors that returns a JSON-formatted `404` status code response.
-#### State
+#### State: [states.py](api/v1/views/states.py)
 - Create a new view for `State` objects that handles all default RestFul API actions.
-#### City
+#### City: [cities.py](api/v1/views/cities.py)
 - Create a new view for `City` objects that handles all default RestFul API actions.
-#### Amenity
+#### Amenity: [amenities.py](api/v1/views/amenities.py)
 - Create a new view for `Amenity` objects that handles all default RestFul API actions.
-#### User
+#### User: [users.py](api/v1/views/users.py)
 - Create a new view for `User` object that handles all default RestFul API actions.
-#### Place
+#### Place: [places.py](api/v1/views/places.py)
 - Create a new view for `Place` objects that handles all default RestFul API actions.
-#### Reviews
+#### Reviews: [places_reviews.py](api/v1/views/places_reviews.py)
 - Create a new view for `Review` object that handles all default RestFul API actions.
-#### HTTP access control (CORS)
+#### HTTP access control (CORS): [app.py](api/v1/app.py)
 - Create a `CORS` instance allowing: `/*` for `0.0.0.0`
 
 ----------

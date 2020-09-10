@@ -42,6 +42,7 @@ def delete_city(city_id):
     empty_dict = {}
     city.delete()
     storage.save()
+    storage.reload()
     return jsonify(empty_dict), 200
 
 

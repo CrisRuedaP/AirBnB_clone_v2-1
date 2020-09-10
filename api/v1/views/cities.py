@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""   module that creates a new view for City objects"""
+""" RESTful API for City object """
 from flask import jsonify, abort, request
 from api.v1.views import app_views
 from models.base_model import BaseModel

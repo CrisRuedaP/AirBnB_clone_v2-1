@@ -69,7 +69,7 @@ def update_amenity(amenity_id):
         if my_dict is None:
             abort(400, "Not a JSON")
         for key, value in my_dict.items():
-                if key not in ["id", "created_at", "updated_at"]:
-                    setattr(amenity, key, value)
+            if key not in ["id", "created_at", "updated_at"]:
+                setattr(amenity, key, value)
         storage.save()
         return jsonify(amenity.to_dict()), 200

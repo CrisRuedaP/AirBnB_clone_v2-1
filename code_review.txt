@@ -1,0 +1,1 @@
+Create folders and init files. Also add the app.py and index.py for the web framework
